@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #111;
+    border-bottom: 2px solid #FF8C02;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.flix {
+    color: #FF8C02;
+}
+
+.wave {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #FF8C02;
+}
+
+.search {
+    padding: 10px;
+    width: 280px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+.search::placeholder {
+    color: #aaa;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80vh;
+    padding-left: 60px;
+    position: relative;
+    background: url('Images/Inception.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.home-text {
+    max-width: 450px;
+    position: relative;
+}
+
+button {
+    background-color: #FF8C02;
+    color: #000;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #e07c02ca;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    justify-content: space-around;
+}
+
+.grid-item {
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 2px 2px 5px #e07b02;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+h2,
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #FF8C02;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #111;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.signup-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fdfdfd;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
